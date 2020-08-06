@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: service-edu
+  profiles:
+    active: dev #环境标识
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml #配置文件格式，properties文件不用配置此项
